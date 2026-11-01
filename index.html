@@ -534,6 +534,23 @@ ul { margin: 0; padding: 0; }
 
           <article class="project">
             <div class="project-meta">
+              <p class="label">Ansible · Dotfiles · Notes</p>
+              <h4>linux-land</h4>
+            </div>
+            <div class="project-body">
+              <p>My workstation as code, plus the note-taking system I run my working day from. Any new machine is fully set up with one command.</p>
+              <ul>
+                <li><code>setup.sh</code> builds the same environment on Ubuntu, WSL2 or macOS with idempotent Ansible roles, run through a throwaway <code>ansible-core</code> so nothing extra is left installed. <code>--check --diff</code> previews every change.</li>
+                <li>CI runs the full playbook on a clean Ubuntu 24.04 container and a macOS runner on every change.</li>
+                <li>Dated Markdown notes driven from Neovim, fzf and ripgrep, which feed clctl's digests and search.</li>
+                <li><code>tx</code> saves and restores tmux sessions, layouts and Neovim sessions across restarts; <code>machine</code> snapshots installed software and restores it on another machine.</li>
+              </ul>
+              <ul class="tags"><li>Ansible</li><li>Bash</li><li>GitHub Actions</li><li>Neovim</li><li>tmux</li><li>PowerShell</li></ul>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-meta">
               <p class="label">Bash · Go · Python</p>
               <h4>Scripts &amp; local model tooling</h4>
               <a href="https://github.com/JB0t/gophers" rel="noopener">github.com/JB0t/gophers</a>
